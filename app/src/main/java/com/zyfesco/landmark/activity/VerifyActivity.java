@@ -210,7 +210,7 @@ public class VerifyActivity extends AppCompatActivity {
                                                 Thread th = new Thread(new Runnable() {
                                                     @Override
                                                     public void run() {
-                                                        AWSCredentials credentials = new BasicAWSCredentials("AKIA2HKPXNKCJ3T7NB4D", "JNKUSp3jbO0glt7cCiN8oNaHyriFRUvzxJ3QWk6B");
+                                                        AWSCredentials credentials = new BasicAWSCredentials("", "");
                                                         AmazonRekognition client = new AmazonRekognitionClient(credentials);
                                                         client.setRegion(Region.getRegion(Regions.AP_NORTHEAST_1 ));
 
