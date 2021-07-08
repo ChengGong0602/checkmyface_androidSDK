@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">checkface</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="act_Loading">Face verifying</string>
+    <string name="act_sucess">Face liveness success!</string>
+    <string name="act_timeout">Time over</string>
+    <string name="value_required">Value Required</string>
+
+
+    <string-array name="living_actions">
+        <item>Face up</item>
+        <item>Face down</item>
+        <item>Face left</item>
+        <item>Face right</item>
+        <item>Eye blink</item>
+        <item>Open mouth</item>
+        <item>Keep face within frame</item>
+
+
+    </string-array>
+
+
+</resources>

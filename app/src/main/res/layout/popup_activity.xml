@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/roundcorner"
+    android:layout_weight="3"
+
+    >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:background="@drawable/button_round_shape"
+
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="mOnCamera"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:text="Take a photo"
+            android:textColor="#2f3efc"
+            android:background="@drawable/button_round_btm"
+
+
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="mOnGallery"
+            android:padding="16dp"
+            android:textAllCaps="false"
+
+            android:text="Choose from library"
+            android:textColor="#2f3efc"
+            android:background="@drawable/button_round_top"
+
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#00EBEAEF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:gravity="center"
+            android:onClick="mOnClose"
+            android:textAllCaps="false"
+            android:text="Cancel"
+            android:textColor="#2f3efc"
+
+            android:background="@drawable/button_round_shape"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>
+
+

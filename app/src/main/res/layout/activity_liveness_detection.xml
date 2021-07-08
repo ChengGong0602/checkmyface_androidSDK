@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.LivenessDetectionActivity"
+    android:orientation="vertical"
+    >
+
+
+    <com.zyfesco.landmark.FixedAspectRatioRelativeLayout
+        android:id="@+id/faceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <SurfaceView
+            android:id="@+id/surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:background="@color/colorCameraback"
+            android:gravity="center"
+            android:text=""/>
+
+
+        <com.tu.tcircleprogresslibrary.TCircleProgressView
+            android:id="@+id/tcpv_dam_board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/space"
+            app:tcpv_animation_duration="1"
+            app:tcpv_background_color="@color/colorCameraback"
+            app:tcpv_arc_end_color="@color/colorBlue"
+            app:tcpv_arc_start_color="@color/colorBlue"
+            app:tcpv_blank_angle="0"
+            app:tcpv_border_width="5dp"
+            app:tcpv_hint_semicircle_rate="0.3"
+            app:tcpv_hint_show="true"
+            app:tcpv_hint_text_color="#ffffff"
+            app:tcpv_hint_background_color="@color/transparent"
+            app:tcpv_hint_text_size="32dp"
+            app:tcpv_hint_text_padding="80dp"
+            app:tcpv_start_angle="-90"
+            app:tcpv_total_progress="100" />
+        <TextView
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tcpv_dam_board"
+            android:background="@color/colorCameraback"
+            android:gravity="center"
+            android:text=""/>
+
+        <ImageView
+            android:id="@+id/arrow_img"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/space"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="180dp"
+            android:visibility="invisible"
+
+
+            app:srcCompat="@drawable/arrow" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_arrow_wback"
+            android:background="@color/transparent"
+            tools:ignore="VectorDrawableCompat" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="55dp"
+            android:textSize="22dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:text="Identity Verification"/>
+
+
+
+
+
+    </com.zyfesco.landmark.FixedAspectRatioRelativeLayout>
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorCameraback"
+        android:layout_below="@id/faceview"
+        android:paddingTop="50dp"
+        android:text="Position your face in the oval"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+
+
+
+
+</RelativeLayout>

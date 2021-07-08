@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activity.VerifyActivity"
+android:background="@color/colorbac"
+android:orientation="vertical">
+
+<TextView
+    android:id="@+id/textView6"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingTop="100dp"
+    android:text="Just one step is left"
+    android:textAlignment="center"
+    android:textColor="@android:color/black"
+    android:textSize="30sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:layout_editor_absoluteY="163dp" />
+
+<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginBottom="20dp"
+    android:layout_weight="1"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
+    app:layout_constraintBottom_toTopOf="@+id/textView12"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.204"
+    app:layout_constraintStart_toStartOf="parent"
+    app:srcCompat="@drawable/su" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+
+    android:layout_weight="1"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+
+        android:text="Face is verifying "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/verify_status"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Please press following button"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></TextView>
+
+        <Button
+            android:id="@+id/Face_compare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="75dp"
+            android:layout_weight="3"
+            android:background="@drawable/blue_round"
+            android:inputType="textCapSentences"
+            android:text="Just wait..."
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent" /> <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></TextView>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
